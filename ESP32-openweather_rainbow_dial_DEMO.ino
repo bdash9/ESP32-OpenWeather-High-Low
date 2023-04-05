@@ -1,3 +1,32 @@
+// ESP32_ILI9341_openweathermap
+
+// downloads json string from openweather.com
+// for environmental conditions of (any) town
+// displays alphanumerically, with gauges and with icons 
+//
+// updates every five minutes in Loop -  check the variable named timerDelay
+//
+// microcontroller ESP32-WROOM-32
+// current display TFT 018  =  320*240 ILI9341 controller
+// implements Bodmer's TFT_ESPI library 
+// implements Bodmer's rainbow scale gauge
+//
+// json instructions by Rui Santos
+// at https://RandomNerdTutorials.com/esp32-http-get-open-weather-map-thingspeak-arduino/
+//
+// public domain
+// July 6, 2021 - minor issues fixed, compass pointer fixed
+// Floris Wouterlood
+//
+// Make sure all the display driver and pin conections are correct by
+// editing the User_Setup.h file in the TFT_eSPI library folder.
+//
+// ######################################################################################
+// ######   DON'T FORGET TO UPDATE THE User_Setup.h FILE IN THE TFT_eSPI LIBRARY    #####
+// ######################################################################################
+
+// Add support for Adafruit ESP32-S2 TFT Feather - With 135x240 screen - Ben
+
 #include <Adafruit_GFX.h>    
 #include <Adafruit_ST7789.h> 
 #include <SPI.h>
